@@ -15,9 +15,9 @@ Represent each website with a probability vector
 📊Va...Vi...Vn, where all components sum to 1.
 ​
 Collect all website vectors into the columns of a matrix M.
-Because each column sums to 1, **M is column-stochastic.
+Because each column sums to 1,** M is column-stochastic.**
 
-➕Perron–Frobenius Theorem:
+**➕Perron–Frobenius Theorem:
 Any non-negative column-stochastic matrix has an eigenvalue of 1; all other eigenvalues with absolute value less than 1.
 Matrix M therefore models a Markov chain whose steady-state distribution gives the long-run probability of being on each website.**
 These final probabilities are used as the website rankings.
@@ -48,5 +48,6 @@ Introduce a random probability of “jumping” to any website.
 2. Construct probability vectors whose components sum to 1.
 3. Build the Markov matrix M by placing these vectors as columns.
 4. **Iterate using the Power Method: repeatedly compute x ← Mx** until convergence.
+5. Rank each website by Markov proabability distrubution value in descending order.
 The converged vector is the steady-state distribution.
 Rank websites according to their steady-state probability.
