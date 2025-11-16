@@ -1,6 +1,6 @@
-# Page-Rank-project
-Linear Algebra PageRank project
-Genesis
+# 🚀Page-Rank-project
+
+**🌍Genesis:**
 I wanted to apply the Linear Algebra I learned through my passion for coding. This project is a basic PageRank-style algorithm that determines the relative ranking of websites in a search engine. I used Python and NumPy for the implementation.
 
 
@@ -33,8 +33,10 @@ A website with no outgoing links has a column that sums to 0, breaking the colum
 
 Solution: Damping Method
 Introduce a random probability of “jumping” to any website.
+
 ✅Fix for Closed Loops
   Random jumps let the algorithm escape from closed loops and converge to the correct steady-state probabilities.
+  
 ✅Fix for Dead Ends
   Random jumps prevent the algorithm from getting stuck.
   Replace any dead-end website’s column with uniform probabilities 
